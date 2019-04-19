@@ -71,20 +71,21 @@
           <th>First Name<span>*</span></th>
           <th>M.I.</th>
           <th>Account<span>*</span></th>
-          <td><input type="text" name="accID" id="accID" placeholder="ACTnnnnnn" pattern="[]" required /></td>
+          <td><input type="text" name="accID" id="accID" placeholder="ACTnnnnnn" pattern="[ACT]^\d[0-9]{6}$" required />
+          </td>
         </tr>
         <tr>
           <td><input type="text" name="lname" id="lname" required /></td>
           <td><input type="text" name="fname" id="fname" required /></td>
           <td><input type="text" name="init" id="init" required /></td>
           <th>Department<span>*</span></th>
-          <td><input type="text" name="deptID" id="deptID" required placeholder="DEPTnnnnnn" pattern="[]" /></td>
+          <td><input type="text" name="deptID" id="deptID" required placeholder="DEPTnnnnnn" pattern="{}" /></td>
         </tr>
         <tr>
           <th>Social Security Number<span>*</span></th>
-          <td colspan="2"><input type="text" name="ssn" id="ssn" required placeholder="nnn-nn-nnnn" pattern="[]" /></td>
+          <td colspan="2"><input type="text" name="ssn" id="ssn" required placeholder="nnn-nn-nnnn" pattern="{}" /></td>
           <th>Project<span>*</span></th>
-          <td><input type="text" name="projID" id="projID" required placeholder="PROJ-xx-ddd" pattern="[]" /></td>
+          <td><input type="text" name="projID" id="projID" required placeholder="PROJ-xx-ddd" pattern="{}" /></td>
         </tr>
       </table>
 
